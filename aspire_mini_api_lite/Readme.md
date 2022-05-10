@@ -168,7 +168,7 @@ Loan data after admin approval:
 ![Approve](screenshots/loan_data_table_after_loan_has_been_approved.png)
 
 
-Loan repay data after admin approval:
+Loan repay data after admin approval, this app will automatically add repayment schedule weekly basis based of the term:
 ![Approve](screenshots/loanrepay_data_table_after_loan_has_been_approved.png)
 
 

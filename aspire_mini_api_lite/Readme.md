@@ -223,6 +223,7 @@ Loan table data after after user paid all scheduled payments:
 ## Run Unittest
 
 ```
+cd banking-api/aspire_mini_api_lite
 python test_app.py
 ```
 

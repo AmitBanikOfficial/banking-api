@@ -34,9 +34,9 @@ pip install -r requirements
 
 ```
 for Windows:
-python app.run
+python app.py
 for linux:
-python3 app.run
+python3 app.py
 ```
 
 ### Routes

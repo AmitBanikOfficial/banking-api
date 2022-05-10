@@ -214,7 +214,7 @@ Loan repay table data after scheduled payment:
 Loan repay table data after user paid all scheduled payments:
 ![Repay](screenshots/repay_table_data_after_user_paid_all_payment.png)
 
-Loan table data after after user paid all scheduled payments:
+Loan table data after after user paid all scheduled payments, the loan is PAID automatically:
 ![Repay](screenshots/loan_table_data_after_user_paid_all_payment.png)
 
 

@@ -46,4 +46,4 @@ app.register_blueprint(repay_loan_bp)
 app.register_blueprint(my_loan_bp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

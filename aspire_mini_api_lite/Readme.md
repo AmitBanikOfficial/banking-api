@@ -21,7 +21,7 @@ Clone the repo, create a virtualenv and install the requirements:
 
 ```
 git clone https://github.com/AmitBanikOfficial/banking-api.git
-cd aspire_mini_api_lite
+cd banking-api/aspire_mini_api_lite
 virtualenv miniaspireenv
 for Windows:
 miniaspireenv\Scripts\activate

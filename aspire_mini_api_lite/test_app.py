@@ -71,7 +71,7 @@ class TestApp(unittest.TestCase):
         result = self.client.post(f'{my_server}/login',data=json.dumps(item),headers={'Content-Type': 'application/json'})
         data = json.loads(result.data)
         access_token = data['access']
-        loan_application_data = {'loan_amount':2000,'term':3}
+        loan_application_data = {'loan_amount':20000,'term':3}
         apply_loan = self.client.post(f'{my_server}/apply_loan',data=json.dumps(loan_application_data),headers={'Content-Type': 'application/json',"Authorization": f"Bearer {access_token}"})
         self.assertEqual(apply_loan.status_code,401)
         

@@ -61,7 +61,7 @@ class TestApp(unittest.TestCase):
         result = self.client.post(f'{my_server}/login',data=json.dumps(item),headers={'Content-Type': 'application/json'})
         data = json.loads(result.data)
         access_token = data['access']
-        loan_application_data = {'loan_amount':2000,'term':3}
+        loan_application_data = {'loan_amount':20000,'term':3}
         apply_loan = self.client.post(f'{my_server}/apply_loan',data=json.dumps(loan_application_data),headers={'Content-Type': 'application/json',"Authorization": f"Bearer {access_token}"})
         self.assertEqual(apply_loan.status_code,201)
         
@@ -124,7 +124,7 @@ class TestApp(unittest.TestCase):
         result = self.client.post(f'{my_server}/login',data=json.dumps(item),headers={'Content-Type': 'application/json'})
         data = json.loads(result.data)
         access_token = data['access']
-        repay_loan_data = {'loanrepay_id':1,'repay_amount':666.67}
+        repay_loan_data = {'loanrepay_id':1,'repay_amount':6666.67}
         repay_loan = self.client.put(f'{my_server}/repay_loan',data=json.dumps(repay_loan_data),headers={'Content-Type': 'application/json',"Authorization": f"Bearer {access_token}"})
         self.assertEqual(repay_loan.status_code,401)
         
@@ -135,7 +135,7 @@ class TestApp(unittest.TestCase):
         result = self.client.post(f'{my_server}/login',data=json.dumps(item),headers={'Content-Type': 'application/json'})
         data = json.loads(result.data)
         access_token = data['access']
-        repay_loan_data = {'loanrepay_id':1,'repay_amount':666.67}
+        repay_loan_data = {'loanrepay_id':1,'repay_amount':6666.67}
         repay_loan = self.client.put(f'{my_server}/repay_loan',data=json.dumps(repay_loan_data),headers={'Content-Type': 'application/json',"Authorization": f"Bearer {access_token}"})
         self.assertEqual(repay_loan.status_code,201)
 
@@ -145,7 +145,7 @@ class TestApp(unittest.TestCase):
         result = self.client.post(f'{my_server}/login',data=json.dumps(item),headers={'Content-Type': 'application/json'})
         data = json.loads(result.data)
         access_token = data['access']
-        repay_loan_data = {'loanrepay_id':19,'repay_amount':666.67}
+        repay_loan_data = {'loanrepay_id':19,'repay_amount':6666.67}
         repay_loan = self.client.put(f'{my_server}/repay_loan',data=json.dumps(repay_loan_data),headers={'Content-Type': 'application/json',"Authorization": f"Bearer {access_token}"})
         self.assertEqual(repay_loan.status_code,404)
 
@@ -155,7 +155,7 @@ class TestApp(unittest.TestCase):
         result = self.client.post(f'{my_server}/login',data=json.dumps(item),headers={'Content-Type': 'application/json'})
         data = json.loads(result.data)
         access_token = data['access']
-        repay_loan_data = {'loanrepay_id':1,'repay_amount':66.67}
+        repay_loan_data = {'loanrepay_id':1,'repay_amount':666.67}
         repay_loan = self.client.put(f'{my_server}/repay_loan',data=json.dumps(repay_loan_data),headers={'Content-Type': 'application/json',"Authorization": f"Bearer {access_token}"})
         self.assertEqual(repay_loan.status_code,401)
 
